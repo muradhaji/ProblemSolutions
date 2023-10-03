@@ -1,0 +1,10 @@
+#Link: https://leetcode.com/problems/sum-of-unique-elements/
+
+class Solution:
+    def sumOfUnique(self, nums: List[int]) -> int:
+        total = 0
+        for num in nums:
+            if nums.count(num) == 1:
+                total += num
+        return total
+        
