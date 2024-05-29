@@ -4,5 +4,5 @@
  * @return {number}
  */
 var climbStairs = function (n) {
-  return n < 0 ? 0 : n === 0 ? 1 : climbStairs(n - 1) + climbStairs(n - 2);
+  return n <= 2 ? n : climbStairs(n - 1) + climbStairs(n - 2);
 };
